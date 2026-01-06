@@ -112,8 +112,13 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
 
-<script defer>
-    AOS.init();
+<script>
+    // Initialize AOS after DOM and scripts are loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof AOS !== 'undefined') {
+            AOS.init();
+        }
+    });
     try {
         $(".waterAnimate").ripples({
             resolution: 1080,

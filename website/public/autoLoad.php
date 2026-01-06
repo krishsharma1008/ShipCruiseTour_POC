@@ -1,14 +1,16 @@
 <?php
 session_start();
 
-// define("DS",DIRECTORY_SEPARATOR);
+if (!defined('DS')) {
+    define("DS", DIRECTORY_SEPARATOR);
+}
 define("ROOT_PATH", dirname(__DIR__) . DS);
-define("APP", ROOT_PATH . 'APP' . DS);
+define("APP", ROOT_PATH . 'app' . DS);
 define("CORE", APP . 'Core' . DS);
 define("CONFIG", APP . 'Config' . DS);
-define("CONTROLLERS", APP . 'Controllers' . DS);
-define("MODELS", APP . 'Models' . DS);
-define("VIEWS", APP . 'Views' . DS);
+define("CONTROLLERS", APP . 'controllers' . DS);
+define("MODELS", APP . 'models' . DS);
+define("VIEWS", APP . 'views' . DS);
 define("LIBS", APP . 'Libs' . DS);
 define("VENDOR", APP . 'vendor' . DS);
 define("PUBLIC", ROOT_PATH . 'public' . DS);

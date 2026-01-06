@@ -12,8 +12,6 @@
 
     <!--    bootstrap  css-->
     <link rel="stylesheet" href="<?= url('css/bootstrap.min.css?v=') . time() ?>">
-
-    <link rel="stylesheet" href="<?= url('css/bootstrap.min.css?v=') . time() ?>">
     <!--    custum css-->
     <link rel="stylesheet" href="<?= url('css/style.css?v=') . time() ?>">
     <!-- Swiper CSS -->
